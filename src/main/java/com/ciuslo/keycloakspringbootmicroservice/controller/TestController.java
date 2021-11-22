@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
-    @RequestMapping(value = "/anonim", method = RequestMethod.GET)
+    @RequestMapping(value = {"/anonim","/none","/anonymous"}, method = RequestMethod.GET)
     public ResponseEntity<String> getAnonymous() {
         return ResponseEntity.ok("Hello ngawur!!");
     }
