@@ -1,0 +1,11 @@
+
+*.prefs
+.classpath
+.project
+src/main/java/com/ciuslo/keycloakspringbootmicroservice/.DS_Store
+target/classes/application.properties
+target/classes/com/ciuslo/keycloakspringbootmicroservice/.DS_Store
+target/classes/com/ciuslo/keycloakspringbootmicroservice/config/KeycloakSecurityConfig.class
+target/classes/com/ciuslo/keycloakspringbootmicroservice/controller/TestController.class
+target/classes/com/ciuslo/keycloakspringbootmicroservice/KeycloakSpringbootMicroserviceApplication.class
+target/test-classes/com/dinuth/keycloakspringbootmicroservice/KeycloakSpringbootMicroserviceApplicationTests.class
