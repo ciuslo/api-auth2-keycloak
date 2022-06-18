@@ -1,18 +1,14 @@
 package com.ciuslo.keycloakspringbootmicroservice.controller;
 
-import com.ciuslo.keycloakspringbootmicroservice.service.JwtDecoder;
-import com.sun.tools.sjavac.Log;
 
 import java.security.Principal;
 import java.util.Map;
 
-import javax.annotation.security.RolesAllowed;
 
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken;
 import org.keycloak.representations.IDToken;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.xml.SourceHttpMessageConverter;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,7 +37,7 @@ public class TestController {
         return ResponseEntity.ok("Hello Admin");
     }
 
-    @RolesAllowed({ "admin", "user" })
+    // @RolesAllowed({ "admin", "user" })
     @RequestMapping(value = "/all-user", method = RequestMethod.GET)
     // public ResponseEntity<String> getAllUser(@RequestHeader String Authorization) {
         // System.out.println("Auth : "+Authorization);
