@@ -52,8 +52,9 @@ public class TestController {
       
       if (principal instanceof KeycloakPrincipal) {
           KeycloakPrincipal kPrincipal = (KeycloakPrincipal) principal;
-          IDToken token = kPrincipal.getKeycloakSecurityContext().getIdToken();
+          IDToken token = kPrincipal.getKeycloakSecurityContext().getToken();
           email = token.getEmail();
+          
           Map<String, Object> customClaims = token.getOtherClaims();
 
           if (customClaims.containsKey("IDuser")) {
